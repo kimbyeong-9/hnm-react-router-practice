@@ -1,7 +1,7 @@
 .login-button {
   display: flex;
   justify-content: flex-end;
-  margin: 20px;
+  margin: 40px;
 }
 .nav-section {
   display: flex;
@@ -9,7 +9,7 @@
 }
 .menu-list {
   display: flex;
-  list-style: none;
+  list-style-type: none;
 
 }
 .menu-list li {
@@ -18,4 +18,16 @@
 .menu-area {
   display: flex;
   justify-content: center;
+}
+.search-input {
+  border: 1px solid #000;
+  border-radius: 10px;
+  padding: 10px;
+  width: 200px;
+}
+.search-input-area {
+  margin-right: 10px;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
 }
