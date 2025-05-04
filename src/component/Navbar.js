@@ -20,7 +20,7 @@ const Navbar = () => {
   <div className='menu-area'>
       <ul className='menu-list'>
         {menuList.map((menu) => (
-            <li>{menu}</li>
+            <li key={menu}>{menu}</li>
         ))}
       </ul>
     <div className='search-input-area'>

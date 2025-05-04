@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { Routes, Route } from 'react-router-dom';
 import ProductAll from './page/ProductAll';
 import Login from './page/Login';
@@ -15,6 +16,7 @@ function App() {
       <Route path="/" element={<ProductAll />} />
       <Route path="/login" element={<Login />} />
       <Route path="/product/:id" element={<ProductDetail />} />
+      <Route path="/products" element={<ProductAll />} />
     </Routes>
 
   </div>
