@@ -7,17 +7,17 @@ import { BrowserRouter } from 'react-router-dom';
 import { config } from '@fortawesome/fontawesome-svg-core';
 import '@fortawesome/fontawesome-svg-core/styles.css';
 import store from './redux/store';
-
+import { Provider } from 'react-redux';
 
 config.autoAddCss = false;
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <provider store={store}>
+  <Provider store={store}>
     <BrowserRouter>
       <App />
     </BrowserRouter>
-    </provider>
+    </Provider>
 );
 
 // If you want to start measuring performance in your app, pass a function
