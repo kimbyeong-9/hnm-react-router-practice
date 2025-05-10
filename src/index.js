@@ -6,14 +6,18 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
 import { config } from '@fortawesome/fontawesome-svg-core';
 import '@fortawesome/fontawesome-svg-core/styles.css';
+import store from './redux/store';
+
 
 config.autoAddCss = false;
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
+  <provider store={store}>
     <BrowserRouter>
       <App />
     </BrowserRouter>
+    </provider>
 );
 
 // If you want to start measuring performance in your app, pass a function
